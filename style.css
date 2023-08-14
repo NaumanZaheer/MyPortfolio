@@ -1,3 +1,15 @@
+@font-face {
+  font-family: CustomFont;
+  src: url(CF.ttf);
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: CustomFont2;
+    src: url(Simpleness.otf);
+}
 .body{
     background-color: rgba(20, 20, 20, 1);
 
@@ -24,7 +36,7 @@
     border-bottom: 2px solid white;
 
 }
-.portfolio{
+#portfolio{
     height: 200px;
     width: 200px;
     background-image: url(IMG_3869.jpg);
@@ -38,18 +50,6 @@
     float: left;
     border: 10px solid white;
 }
-@font-face {
-  font-family: CustomFont;
-  src: url(CF.ttf);
-
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-    font-family: CustomFont2;
-    src: url(Simpleness.otf);
-}
 #pf{
     
     font-size: 50px;
@@ -59,8 +59,6 @@
     text-align: center;
     padding-top: 5%;
     margin-right: 8%;
-    
-
 }
 #name p{
 
@@ -96,6 +94,7 @@
     display: block;
     margin-right: 80%;
 }
+
 #edD , #exD ,#sD{
     
     background-color: rgba(20, 20, 20 , 0.8);
@@ -112,7 +111,7 @@
 ul{
 
     font-family: CustomFont;
-    
+    list-style: none;
 }
 li{
     font-size: 18px;
@@ -126,3 +125,139 @@ li{
 #sD p{
     font-size: 16px;
 }
+#dateEDU{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+#underline{
+    border-bottom: 2px solid white;
+    margin-right: 3%;
+
+}
+@media (max-width: 500px) {
+        #s1 {
+          background-image: url(background.png);
+          background-position-x: 700px;
+          background-position-y: 10px;
+        }
+        #s2 {
+          background-image: url(background2.png);
+          background-position-x: 500px;
+          background-position-y: -2px;
+        }
+        .container {
+          background-color: rgb(25, 25, 25);
+          border-bottom-left-radius: 10%;
+          border-bottom-right-radius: 10%;
+          border-bottom: 2px solid white;
+        }
+        #portfolio {
+          height: 60px;
+          width: 60px;
+          background-size: 120%;
+          background-position-x: -5px;
+          background-position-y: -50px;
+          margin-top: 8%;
+          margin-left: 3%;
+          border: 3px solid white;
+        }
+        #pf {
+          font-size: 30px;
+          letter-spacing: 5px;
+          padding-top: 5%;
+          margin-right: 15%;
+        }
+        #name p {
+          letter-spacing: 2px;
+          font-size: 20px;
+          border-radius: 3px;
+          display: inline;
+          padding-left: 7%;
+          padding-right: 6%;
+          border-bottom-left-radius: 75%;
+          border-bottom-right-radius: 75%;
+          border-bottom: 5px solid black;
+          margin-left: 2%;
+        }
+        #education {
+          margin-top: 0%;
+        }
+        #education,
+        #experiecne,
+        #skills {
+          letter-spacing: 2px;
+          font-size: 18px;
+          border-bottom: 3px solid white;
+          border-bottom-left-radius: 15%;
+          padding-top: 9px;
+          padding-bottom: 5px;
+          padding-left: 2%;
+          padding-right: 30%;
+          margin-right: 80%;
+        }
+
+        #edD,
+        #exD,
+        #sD {
+          background-color: rgba(20, 20, 20, 0.8);
+          margin: 10% 5% 2% 5%;
+          border-radius: 5px;
+          font-size: 14px;
+          padding: 1%;
+        }
+        ul {
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+        li {
+          font-size: 12px;
+        }
+        #sD li {
+          font-size: 14px;
+        }
+        #sD p {
+          font-size: 12px;
+        }
+        #underline {
+          border-bottom: 2px solid white;
+          margin-right: 0%;
+        }
+      }
+
+      @media (min-width: 500px) and (max-width: 1100px) {
+        #pf {
+          font-size: 50px;
+          letter-spacing: 5px;
+          padding-top: 5%;
+          margin-right: 15%;
+        }
+        .container {
+          background-color: rgb(25, 25, 25);
+          border-bottom-left-radius: 15%;
+          border-bottom-right-radius: 15%;
+          border-bottom: 2px solid white;
+        }
+        #name p {
+          letter-spacing: 2px;
+          font-size: 30px;
+          border-radius: 3px;
+          display: inline;
+          padding-left: 11%;
+          padding-right: 10%;
+          border-bottom-left-radius: 75%;
+          border-bottom-right-radius: 75%;
+          border-bottom: 5px solid black;
+          margin-left: 4%;
+        }
+        #portfolio {
+          height: 130px;
+          width: 130px;
+          background-size: 120%;
+          background-position-x: -5px;
+          background-position-y: -100px;
+          margin-top: 8%;
+          margin-left: 3%;
+          border: 3px solid white;
+        }
+      }
